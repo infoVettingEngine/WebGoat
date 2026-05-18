@@ -35,4 +35,4 @@ jobs:
         coverity_build_command: mvnw install
         coverity_clean_command: mvnw clean 
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        include_diagnostics: false
+        include_diagnostics: true

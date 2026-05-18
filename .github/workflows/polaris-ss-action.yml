@@ -32,7 +32,7 @@ jobs:
         polaris_upload_sarif_report: false
         #coverity_build_command: mvn -B -DskipTests package
         #coverity_clean_command: mvn -B clean 
-        coverity_build_command: ./mvnw install
-        coverity_clean_command: ./mvnw clean 
+        coverity_build_command: mvnw install
+        coverity_clean_command: mvnw clean 
         github_token: ${{ secrets.GITHUB_TOKEN }}
         include_diagnostics: false

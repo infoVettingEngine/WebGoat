@@ -26,7 +26,7 @@ jobs:
           cache: ""
 
     - name: Build with Maven
-      run: mvn --no-transfer-progress verify
+      run: mvnw clean install
         
     - name: Polaris Scan
       uses: blackduck-inc/black-duck-security-scan@v2
